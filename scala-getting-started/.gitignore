@@ -1,0 +1,29 @@
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+scala-2.11.7*
+
+*/*/.idea/*
+.idea
+scala-getting-started/.idea/*
+functionalScalaCourse/.idea/*
+functionalScalaCourse1/example/.classpath
+functionalScalaCourse1/example/.project
+functionalScalaCourse1/example/.settings/org.scala-ide.sdt.core.prefs
+functionalScalaCourse1/example/build.sbt
+functionalScalaCourse1/example/lib/cafesat_2.11-0.01.jar

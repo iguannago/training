@@ -1,0 +1,12 @@
+<classpath>
+  <classpathentry output="target/scala-2.11/classes" kind="src" path="src/main/scala"/>
+  <classpathentry output="target/scala-2.11/test-classes" kind="src" path="src/test/scala"/>
+  <classpathentry kind="lib" path="./lib/cafesat_2.11-0.01.jar"/>
+  <classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+  <classpathentry kind="lib" path="./lib_managed/bundles/org.scalatest/scalatest_2.11/scalatest_2.11-2.2.4.jar"/>
+  <classpathentry kind="lib" path="./lib_managed/bundles/org.scala-lang.modules/scala-xml_2.11/scala-xml_2.11-1.0.2.jar"/>
+  <classpathentry kind="lib" path="./lib_managed/jars/junit/junit/junit-4.10.jar"/>
+  <classpathentry kind="lib" path="./lib_managed/jars/org.hamcrest/hamcrest-core/hamcrest-core-1.1.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="output" path="bin"/>
+</classpath>

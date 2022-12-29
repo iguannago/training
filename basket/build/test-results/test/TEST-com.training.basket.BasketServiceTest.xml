@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.training.basket.BasketServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-09-26T08:57:40" hostname="Davids-MacBook-Pro.local" time="0.062">
+  <properties/>
+  <testcase name="[1] subscription=ENTERTAINMENT, expectedBasketPrice=9.99" classname="com.training.basket.BasketServiceTest" time="0.047"/>
+  <testcase name="[2] subscription=SPORTS, expectedBasketPrice=19.99" classname="com.training.basket.BasketServiceTest" time="0.002"/>
+  <testcase name="[3] subscription=KIDS, expectedBasketPrice=6.99" classname="com.training.basket.BasketServiceTest" time="0.002"/>
+  <testcase name="whenUnknownSubscription_ThenThrowException()" classname="com.training.basket.BasketServiceTest" time="0.002"/>
+  <testcase name="whenEntertainmentAndSports_ThenCalculateBasketSuccessfully()" classname="com.training.basket.BasketServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

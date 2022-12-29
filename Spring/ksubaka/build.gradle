@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE")
+    }
+}
+
+
+jar {
+    baseName = 'ksubaka'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework:spring-web'
+    compile 'com.fasterxml.jackson.core:jackson-databind'
+    testCompile 'junit:junit:4.12'
+    compile 'org.slf4j:slf4j-api:1.7.18'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
