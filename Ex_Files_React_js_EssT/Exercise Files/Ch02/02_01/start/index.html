@@ -13,13 +13,26 @@
     <title>React ⚛️</title>
   </head>
   <body>
+    <h1 id="title"></h1>
     <div id="root"></div>
-    <h1>Getting Started with React</h1>
+    
     <script type="text/javascript">
-      ReactDOM.render(
-        React.createElement("h1", null, "Getting Started with React"),
-        document.getElementById("root")
+      let h1 = React.createElement(
+        'h1',
+        null,
+        'Welcome to React Essential Training'
       );
+
+      let ul = React.createElement(
+        'ul',
+        { style: { color: 'blue' } },
+        React.createElement('li', null, 'Option 1'),
+        React.createElement('li', null, 'Option 2'),
+        React.createElement('li', null, 'Option 3')
+      );
+
+      ReactDOM.render(h1, document.getElementById('title'));
+      ReactDOM.render(ul, document.getElementById('root'));
     </script>
   </body>
 </html>
