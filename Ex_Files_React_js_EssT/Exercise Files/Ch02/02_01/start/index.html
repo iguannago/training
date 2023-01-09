@@ -10,29 +10,35 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
       crossorigin
     ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <title>React ⚛️</title>
   </head>
   <body>
-    <h1 id="title"></h1>
+    <div id="title"></div>
     <div id="root"></div>
-    
-    <script type="text/javascript">
+
+    <script type="text/babel">
       let h1 = React.createElement(
         'h1',
         null,
         'Welcome to React Essential Training'
       );
 
-      let ul = React.createElement(
-        'ul',
-        { style: { color: 'blue' } },
-        React.createElement('li', null, 'Option 1'),
-        React.createElement('li', null, 'Option 2'),
-        React.createElement('li', null, 'Option 3')
-      );
-
       ReactDOM.render(h1, document.getElementById('title'));
-      ReactDOM.render(ul, document.getElementById('root'));
+
+      let robot = '🤖';
+      let cowboy = '🤠';
+      let moon = '🌒';
+      let name = 'david';
+      ReactDOM.render(
+        <ul>
+          <li>{robot}</li>
+          <li>{cowboy}</li>
+          <li>{moon}</li>
+          <li>{name.toUpperCase()}</li>
+        </ul>,
+        document.getElementById('root')
+      );
     </script>
   </body>
 </html>
