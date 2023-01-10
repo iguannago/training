@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  spring-boot-prod-docker-app:
+    image: spring-boot-docker-image
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '80:5000'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev

@@ -1,0 +1,15 @@
+[Unit]
+Description=Spring Starter
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/opt/spring-boot-prod
+ExecStart=/usr/bin/java -jar -Dspring.profiles.active=true /usr/local/spring-boot-prod/SpringBootProdApplication.jar
+Restart=on-abort
+User=spring-boot-prod
+Group=spring-boot-prod
+
+[Install]
+WantedBy=multi-user.target
+
