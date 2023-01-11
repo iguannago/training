@@ -1,44 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>React ⚛️</title>
-  </head>
-  <body>
-    <div id="title"></div>
-    <div id="root"></div>
 
-    <script type="text/babel">
-      let h1 = React.createElement(
-        'h1',
-        null,
-        'Welcome to React Essential Training'
-      );
+<head>
+  <meta charset="UTF-8" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <title>React ⚛️</title>
+</head>
 
-      ReactDOM.render(h1, document.getElementById('title'));
+<body>
+  <div id="title"></div>
+  <div id="root"></div>
 
-      let robot = '🤖';
-      let cowboy = '🤠';
-      let moon = '🌒';
-      let name = 'david';
-      ReactDOM.render(
-        <ul>
-          <li>{robot}</li>
-          <li>{cowboy}</li>
-          <li>{moon}</li>
-          <li>{name.toUpperCase()}</li>
-        </ul>,
-        document.getElementById('root')
-      );
-    </script>
-  </body>
+  <script type="text/babel">
+    let h1 = React.createElement(
+      'h1',
+      null,
+      'Welcome to React Essential Training'
+    );
+
+    ReactDOM.render(h1, document.getElementById('title'));
+
+    let robot = '🤖';
+    let cowboy = '🤠';
+    let moon = '🌒';
+    let name = 'david';
+    ReactDOM.render(
+      <ul>
+        <li>{robot}</li>
+        <li>{cowboy}</li>
+        <li>{moon}</li>
+        <li>{name.toUpperCase()}</li>
+      </ul>,
+      document.getElementById('root')
+    );
+  </script>
+</body>
+
 </html>
