@@ -14,25 +14,46 @@
   <div id="root"></div>
 
   <script type="text/babel">
-    let h1 = React.createElement(
-      'h1',
-      null,
-      'Welcome to React Essential Training'
-    );
 
-    ReactDOM.render(h1, document.getElementById('title'));
+    function Header(props) {
+      console.log(props);
+      return (
+        <header>
+          <h1>{props.name}'s Kitchen</h1>
+        </header>
+      );
+    };
 
-    let robot = '🤖';
-    let cowboy = '🤠';
-    let moon = '🌒';
-    let name = 'david';
+    function Main(props) {
+      return (
+        <section>
+          <p>
+            We serve the most {props.adjective} food around.
+          </p>
+        </section>
+      )
+    }
+
+    function Footer(props) {
+      return (
+        <footer>
+          <p>Copyright {props.year}</p>
+        </footer>
+      );
+    };
+
+    function App() {
+      return (
+        <div>
+          <Header name='David' />
+          <Main adjective='amazing' />
+          <Footer year={new Date().getFullYear()} />
+        </div>
+      )
+    }
+
     ReactDOM.render(
-      <ul>
-        <li>{robot}</li>
-        <li>{cowboy}</li>
-        <li>{moon}</li>
-        <li>{name.toUpperCase()}</li>
-      </ul>,
+      <App />,
       document.getElementById('root')
     );
   </script>
