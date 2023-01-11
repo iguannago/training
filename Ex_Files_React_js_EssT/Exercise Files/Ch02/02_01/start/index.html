@@ -30,6 +30,12 @@
           <p>
             We serve the most {props.adjective} food around.
           </p>
+          <img
+            height={205}
+            width={300}
+            src='./food.jpg'
+            alt='A server presents two plates at a fancy restaurant'
+          />
           <ul>
             {props.dishes.map((dish) => (
               <li key={dish.id}>{dish.title}</li>
