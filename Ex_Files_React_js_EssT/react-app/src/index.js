@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import AppForm from './AppForm';
+import AppFormWithUseRef from './AppFormWithUseRef';
+import AppFormWithUseState from './AppFormWithUseState';
 import AppMoreAboutMe from './AppMoreAboutMe';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App firstname='David Crespo' />
-    <AppForm />
+    <AppFormWithUseRef />
+    <AppFormWithUseState />
     <AppMoreAboutMe />
   </React.StrictMode>,
   document.getElementById('root')

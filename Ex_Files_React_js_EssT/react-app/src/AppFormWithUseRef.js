@@ -1,7 +1,7 @@
 import './App.css';
 import { useRef } from 'react';
 
-function AppForm() {
+function AppFormWithUseRef() {
   const colorTitle = useRef();
   const hexColor = useRef();
 
@@ -26,4 +26,4 @@ function AppForm() {
   );
 }
 
-export default AppForm;
+export default AppFormWithUseRef;
