@@ -14,10 +14,10 @@ function App({ firstname }) {
 
   return (
     <div>
-      <div className='App-header'>
-        <h1 className='App-logo'>{firstname}</h1>
-      </div>
-      <div className='App'>
+      <header>
+        <h1>{firstname}</h1>
+      </header>
+      <main>
         <input type='checkbox' value={checked} onChange={setChecked} />
         <label>{checked ? 'checked' : 'not checked'}</label>
         <h2>Your emotion is: {emotion}</h2>
@@ -38,7 +38,7 @@ function App({ firstname }) {
         >
           Change secondary emotion
         </button>
-      </div>
+      </main>
     </div>
   );
 }

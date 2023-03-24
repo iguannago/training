@@ -5,7 +5,9 @@ function AppMoreAboutMe() {
   const [userData, setUserData] = useState({});
 
   return (
-      <div className='App'>
+    <div>
+      <footer>
+        &copy; 2023 David Crespo. All rights reserved.
         <button
           onClick={() => {
             userData.name === undefined ? fetchUserData() : setUserData({});
@@ -22,7 +24,8 @@ function AppMoreAboutMe() {
             <img src={userData.avatar_url} alt={userData.name} />
           </div>
         )}
-      </div>
+      </footer>
+    </div>
   );
 
   async function fetchUserData() {

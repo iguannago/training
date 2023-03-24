@@ -13,22 +13,24 @@ function AppFormWithUseState() {
     setTitle('');
   };
   return (
-    <div className='App'>
-      <h1>Color Organizer</h1>
-      <form onSubmit={submit}>
-        <input
-          onChange={(event) => setTitle(event.target.value)}
-          value={title}
-          type='text'
-          placeholder='color title...'
-        />
-        <input
-          onChange={(event) => setColor(event.target.value)}
-          value={color}
-          type='color'
-        />
-        <button>ADD</button>
-      </form>
+    <div>
+      <main>
+        <h2>Color Organizer</h2>
+        <form onSubmit={submit}>
+          <input
+            onChange={(event) => setTitle(event.target.value)}
+            value={title}
+            type='text'
+            placeholder='color title...'
+          />
+          <input
+            onChange={(event) => setColor(event.target.value)}
+            value={color}
+            type='color'
+          />
+          <button>ADD</button>
+        </form>
+      </main>
     </div>
   );
 }

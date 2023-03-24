@@ -15,13 +15,15 @@ function AppFormWithUseRef() {
     console.log(title, color);
   };
   return (
-    <div className='App'>
-      <h1>Color Organizer</h1>
-      <form onSubmit={submit}>
-        <input ref={colorTitle} type='text' placeholder='color title...' />
-        <input ref={hexColor} type='color' />
-        <button>ADD</button>
-      </form>
+    <div>
+      <main>
+        <h2>Color Organizer</h2>
+        <form onSubmit={submit}>
+          <input ref={colorTitle} type='text' placeholder='color title...' />
+          <input ref={hexColor} type='color' />
+          <button>ADD</button>
+        </form>
+      </main>
     </div>
   );
 }
