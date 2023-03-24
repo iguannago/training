@@ -13,28 +13,32 @@ function App({ firstname }) {
   }, [emotion, secondary, checked]);
 
   return (
-    <div className='App'>
-      <h1>Hello {firstname}</h1>
-      <input type='checkbox' value={checked} onChange={setChecked} />
-      <label>{checked ? 'checked' : 'not checked'}</label>
-      <h2>Your emotion is: {emotion}</h2>
-      <button
-        onClick={() => {
-          setEmotion((emotion) => (emotion === 'happy' ? 'sad' : 'happy'));
-        }}
-      >
-        Change emotion
-      </button>
-      <h2>Current secondary emotion is: {secondary}</h2>
-      <button
-        onClick={() => {
-          setSecondary((secondary) =>
-            secondary === 'tired' ? 'happy' : 'tired'
-          );
-        }}
-      >
-        Change secondary emotion
-      </button>
+    <div>
+      <div className='App-header'>
+        <h1 className='App-logo'>{firstname}</h1>
+      </div>
+      <div className='App'>
+        <input type='checkbox' value={checked} onChange={setChecked} />
+        <label>{checked ? 'checked' : 'not checked'}</label>
+        <h2>Your emotion is: {emotion}</h2>
+        <button
+          onClick={() => {
+            setEmotion((emotion) => (emotion === 'happy' ? 'sad' : 'happy'));
+          }}
+        >
+          Change emotion
+        </button>
+        <h2>Current secondary emotion is: {secondary}</h2>
+        <button
+          onClick={() => {
+            setSecondary((secondary) =>
+              secondary === 'tired' ? 'happy' : 'tired'
+            );
+          }}
+        >
+          Change secondary emotion
+        </button>
+      </div>
     </div>
   );
 }

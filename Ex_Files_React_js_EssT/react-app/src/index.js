@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import AppForm from './AppForm';
+import AppMoreAboutMe from './AppMoreAboutMe';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App firstname='David' />
+    <App firstname='David Crespo' />
     <AppForm />
+    <AppMoreAboutMe />
   </React.StrictMode>,
   document.getElementById('root')
 );
