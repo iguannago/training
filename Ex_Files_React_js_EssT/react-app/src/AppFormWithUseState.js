@@ -9,8 +9,8 @@ function AppFormWithUseState() {
     e.preventDefault();
     alert(title + ' ' + color);
     console.log(title, color);
-    setColor('#000000');
-    setTitle('');
+    setColor(color);
+    setTitle(color);
   };
   return (
     <div>

@@ -7,9 +7,9 @@ function App({ firstname }) {
   const [checked, setChecked] = useReducer((checked) => !checked, false);
 
   useEffect(() => {
-    console.log(`It's ${emotion} right now`);
-    console.log(`It's ${secondary} right now`);
-    console.log(`It's ${checked} right now`);
+    console.log(`Emotion is: ${emotion}`);
+    console.log(`Secondary emotion is: ${secondary}`);
+    console.log(`Checked is: ${checked}`);
   }, [emotion, secondary, checked]);
 
   return (
@@ -28,7 +28,7 @@ function App({ firstname }) {
         >
           Change emotion
         </button>
-        <h2>Current secondary emotion is: {secondary}</h2>
+        <h2>Secondary emotion is: {secondary}</h2>
         <button
           onClick={() => {
             setSecondary((secondary) =>

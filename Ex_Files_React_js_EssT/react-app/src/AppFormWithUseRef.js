@@ -10,8 +10,8 @@ function AppFormWithUseRef() {
     const title = colorTitle.current.value;
     const color = hexColor.current.value;
     alert(title + ' ' + color);
-    colorTitle.current.value = '';
-    hexColor.current.value = '';
+    colorTitle.current.value = color;
+    hexColor.current.value = color;
     console.log(title, color);
   };
   return (
